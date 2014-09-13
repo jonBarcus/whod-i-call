@@ -9,8 +9,8 @@
 CommunicationType.delete_all
 Entry.delete_all
 
-email = CommunicationType.new({name: "E-Mail"})
-phone = CommunicationType.new({name: "Phone Call"})
-skype = CommunicationType.new({name: "Skype"})
-hangout = CommunicationType.new({name: "Google Hangout"})
-application = CommunicationType.new({name: "Online Application"})
+email = CommunicationType.create({name: "E-Mail"})
+phone = CommunicationType.create({name: "Phone Call"})
+skype = CommunicationType.create({name: "Skype"})
+hangout = CommunicationType.create({name: "Google Hangout"})
+application = CommunicationType.create({name: "Online Application"})
