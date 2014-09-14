@@ -3,9 +3,11 @@
 <li>
 <% @entries.each do |entry| %>
   <ul>
-    <%= entry.contact_name %> at <%= entry.organization_name %>
+    <%= link_to(entry.contact_name, action: :show, id: entry.id) %>
+    at <%= entry.organization_name %>
   </ul>
 <% end %>
 </li>
 
 <a href="/">Home</a>
+<a href="/entries/new">New Entry</a>
