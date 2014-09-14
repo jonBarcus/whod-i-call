@@ -6,6 +6,7 @@ class EntriesController < ApplicationController
 
   def new
     @communication_types = CommunicationType.all
+    @entry = Entry.new
   end
 
   def create
@@ -19,7 +20,7 @@ class EntriesController < ApplicationController
   end
 
   def show
-    @entry = Entry.all
+    @entries = Entry.all
   end
 
   private

@@ -1,0 +1,11 @@
+<h1>Your Entries</h1>
+
+<li>
+<% @entries.each do |entry| %>
+  <ul>
+    <%= entry.contact_name %> at <%= entry.organization_name %>
+  </ul>
+<% end %>
+</li>
+
+<a href="/">Home</a>
