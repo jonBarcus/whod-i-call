@@ -1,0 +1,13 @@
+<h1>Your Entries</h1>
+
+<li>
+<% @entries.each do |entry| %>
+  <ul>
+    <%= link_to(entry.contact_name, action: :show, id: entry.id) %>
+    at <%= entry.organization_name %>
+  </ul>
+<% end %>
+</li>
+
+<a href="/">Home</a>
+<a href="/entries/new">New Entry</a>

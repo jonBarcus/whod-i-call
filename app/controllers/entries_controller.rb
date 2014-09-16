@@ -20,7 +20,6 @@ class EntriesController < ApplicationController
   end
 
   def show
-    @entries = Entry.all
   end
 
   private
