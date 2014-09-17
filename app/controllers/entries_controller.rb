@@ -20,7 +20,7 @@ class EntriesController < ApplicationController
   end
 
   def show
-    binding.pry
+    @entry = Entry.find_by(id: params[:id])
   end
 
   private
