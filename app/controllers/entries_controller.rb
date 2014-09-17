@@ -21,6 +21,12 @@ class EntriesController < ApplicationController
 
   def show
     @entry = Entry.find_by(id: params[:id])
+    @com_type = CommunicationType.find_by(id: @entry.communication_type_id).name
+  end
+
+  def edit
+    @communication_types = CommunicationType.all
+    @entry = Entry.find_by(id: params[:id])
   end
 
   private
