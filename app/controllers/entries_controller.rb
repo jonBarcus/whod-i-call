@@ -29,6 +29,8 @@ class EntriesController < ApplicationController
     @entry = Entry.find_by(id: params[:id])
   end
 
+  # need to add delete
+
   private
 
   def entry_params
