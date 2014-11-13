@@ -16,11 +16,11 @@
 
  */
 
-/*#main {
+#main {
   border: 1px solid black;
-}
+  text-align: center;
+},
 
-#buttons {
-  border: 1px dashed blue;
+.button {
+  width: auto;
 }
-*/
