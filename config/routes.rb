@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
 
    resources :entries
+   resources :session
+   resources :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
