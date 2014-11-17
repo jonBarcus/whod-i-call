@@ -1,7 +1,15 @@
+
+
+
+
+
+
 <div id="main" class="row">
   <div class="columns small-12">
     <h1>Who'd I Call</h1>
   </div>
+
+  <% if logged_in? %>
   <div class="columns small-2 small-centered">
     <ul class="stack button-group">
       <li><a href="/entries/new" class="button">New Entry</a></li>
@@ -10,4 +18,11 @@
   </div>
   <div class="columns small-2 small-centered">
   </div>
+
+  <% else %>
+
+  Please register
+
+  <a href="/users/new">Register for Who'd I Call?</a>
+
 </div>

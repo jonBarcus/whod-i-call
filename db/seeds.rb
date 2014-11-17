@@ -8,9 +8,12 @@
 
 CommunicationType.delete_all
 Entry.delete_all
+User.delete_all
 
 email = CommunicationType.create({name: "E-Mail"})
 phone = CommunicationType.create({name: "Phone Call"})
 skype = CommunicationType.create({name: "Skype"})
 hangout = CommunicationType.create({name: "Google Hangout"})
 application = CommunicationType.create({name: "Online Application"})
+
+new_user = User.create({email: "test@test.com", name: "Test Tester", password: "test", password_confirmation: "test"})
