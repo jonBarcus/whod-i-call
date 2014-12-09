@@ -29,6 +29,19 @@ class EntriesController < ApplicationController
     @entry = Entry.find_by(id: params[:id])
   end
 
+  def update
+    @communication_types = CommunicationType.all
+    @entry = Entry.find_by(id: params[:id])
+
+    @entry.update(entry_params)
+
+    if @entry.save
+      redirect_to entry_path(@entry)
+    else
+      render :update
+    end
+  end
+
   # need to add delete
 
   private
