@@ -1,22 +1,14 @@
-
-
-
-
-
-
 <div id="main" class="row">
   <div class="columns small-12">
     <h1>Who'd I Call?</h1>
   </div>
 
   <% if logged_in? %>
-  <div class="columns small-2 small-centered">
+  <div class="columns small-3 small-centered">
     <ul class="stack button-group">
       <li><a href="/entries/new" class="button">New Entry</a></li>
       <li><a href="/entries/" class="button">View Entries</a></li>
     </ul>
-  </div>
-  <div class="columns small-2 small-centered">
   </div>
 
   <a href="/logout">Logout</a>
@@ -30,4 +22,8 @@
   </div>
 
   <% end %>
+
+  <div class="columns small-3 small-centered">
+  </div>
+
 </div>
