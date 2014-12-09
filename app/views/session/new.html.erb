@@ -1,7 +1,16 @@
-<%= form_tag("/session", method: "post") do %>
-  <%= label_tag(:email) %>
-  <%= text_field_tag(:email) %>
-  <%= label_tag(:password) %>
-  <%= password_field_tag(:password) %>
-  <%= submit_tag("Login") %>
-<% end %>
+<div class="row">
+  <div class="columns small-4">
+  </div>
+  <div class="columns small-4 small-centered">
+    <%= form_tag("/session", method: "post") do %>
+      <%= label_tag(:email) %>
+      <%= text_field_tag(:email) %>
+      <%= label_tag(:password) %>
+      <%= password_field_tag(:password) %>
+      <%= submit_tag("Login") %>
+    <% end %>
+  </div>
+  <div class="columns small-4">
+  </div>
+
+</div>
