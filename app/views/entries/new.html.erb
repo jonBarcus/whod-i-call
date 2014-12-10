@@ -11,5 +11,6 @@
   <%= f.text_area(:notes) %>
   <%= f.label(:communication_type_id) %>
   <%= f.collection_select(:communication_type_id, @communication_types, :id, :name) %>
+  <%= f.hidden_field(:user_id, :value => current_user.id) %>
   <%= f.submit %>
 <% end %>

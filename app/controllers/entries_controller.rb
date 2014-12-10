@@ -1,7 +1,7 @@
 class EntriesController < ApplicationController
 
   def index
-    @entries = Entry.all
+    @entries = current_user.entries
   end
 
   def new
@@ -52,7 +52,8 @@ class EntriesController < ApplicationController
       :contact_name,
       :organization_name,
       :notes,
-      :communication_type_id
+      :communication_type_id,
+      :user_id
       )
   end
 
