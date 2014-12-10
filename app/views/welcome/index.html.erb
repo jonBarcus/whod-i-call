@@ -1,37 +1,40 @@
-<div class="row">
-  <div id="heading" class="columns small-12 small-centered">
-    <h1>Who'd I Call?</h1>
-  </div>
-</div>
-
-<div id="main" class="row">
-  <div class="columns small-3">
-    Blah
+<div id="body">
+  <div class="row">
+    <div id="heading" class="columns small-12 small-centered">
+      <h1>Who'd I Call?</h1>
+    </div>
   </div>
 
-  <% if logged_in? %>
-  <div class="columns small-4 small-centered">
-    <ul class="stack button-group">
-      <li><a href="/entries/new" class="button">New Entry</a></li>
-      <li><a href="/entries/" class="button">View Entries</a></li>
-    </ul>
+  <div id="main" class="row">
+    <div class="columns small-3">
+    </div>
+
+    <% if logged_in? %>
+      <div class="columns small-6 small-centered">
+        <a href="/entries/new" class="button">New Entry</a>
+      </div>
+      <div class="columns small-6 small-centered">
+        <a href="/entries/" class="button">View Entries</a>
+      </div>
+      <div class="columns small-6 small-centered">
+        <a href="/logout" class="button">Logout</a>
+      </div>
+
+    <% else %>
+      <div class="columns small-6 small-centered">
+        <a href="/users/new" class="button">Register for Who'd I Call?</a>
+      </div>
+      <div class="columns small-6 small-centered">
+        <a href="/session/new" class="button">Sign In</a>
+      </div>
+
+
+    <% end %>
+
+    <div class="columns small-3 small-centered">
+    </div>
+
   </div>
-
-  <a href="/logout">Logout</a>
-
-  <% else %>
-  <div class="columns small-4 small-centered">
-    <ul class="stack button-group">
-      <li><a href="/users/new" class="button expanded">Register for Who'd I Call?</a></li>
-      <li><a href="/session/new" class="button expanded">Sign In</a></li>
-    </ul>
+  <div>
   </div>
-
-  <% end %>
-
-  <div class="columns small-3 small-centered">
-  </div>
-
-</div>
-<div>
 </div>
