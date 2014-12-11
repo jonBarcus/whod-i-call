@@ -1,17 +1,31 @@
 <h1>Edit Entry</h1>
-
-<%= form_for(@entry) do |f| %>
-  <%= f.label(:date) %>
-  <%= f.date_field(:date) %>
-  <%= f.label(:contact_name) %>
-  <%= f.text_field(:contact_name) %>
-  <%= f.label(:organization_name) %>
-  <%= f.text_field(:organization_name) %>
-  <%= f.label(:notes) %>
-  <%= f.text_area(:notes) %>
-  <%= f.label(:communication_type_id) %>
-  <%= f.collection_select(:communication_type_id, @communication_types, :id, :name) %>
-  <%= f.submit %>
-<% end %>
-
-<a href="/entries/<%=@entry.id%>">Go Back</a>
+<div class="row">
+  <div class="columns small-3">
+  </div>
+  <div class="columns small-6 small-centered">
+    <%= form_for(@entry) do |f| %>
+      <%= f.label(:date) %>
+      <%= f.date_field(:date) %>
+      <%= f.label(:contact_name) %>
+      <%= f.text_field(:contact_name) %>
+      <%= f.label(:organization_name) %>
+      <%= f.text_field(:organization_name) %>
+      <%= f.label(:notes) %>
+      <%= f.text_area(:notes) %>
+      <%= f.label(:communication_type_id) %>
+      <%= f.collection_select(:communication_type_id, @communication_types, :id, :name) %>
+      <%= f.submit class: "button" %>
+    <% end %>
+  </div>
+  <div class="columns small-3">
+  </div>
+</div>
+<div class="row">
+  <div class="columns small-3">
+  </div>
+  <div class="columns small-6 small-centered">
+    <a href="/entries/<%=@entry.id%>" class="button">Go Back</a>
+  </div>
+  <div class="columns small-3">
+  </div>
+</div>
