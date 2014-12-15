@@ -8,8 +8,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
+      flash[:notice] = "Account Created Successfully"
       redirect_to("/")
     else
+      flash[:notice] = "Account Not Created, Please Try Again"
       render(:new)
     end
   end
