@@ -25,6 +25,8 @@ h1 {
   text-align: center;
 }
 
+/*code for body tag:  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/*/
+
 #body {
     position: relative;
   top: 50%;
