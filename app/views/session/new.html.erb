@@ -1,25 +1,27 @@
-<div class="row">
-  <div class="columns small-4">
-  </div>
-  <div class="columns small-4 small-centered">
-    <%= form_tag("/session", method: "post") do %>
-      <%= label_tag(:email) %>
-      <%= text_field_tag(:email) %>
-      <%= label_tag(:password) %>
-      <%= password_field_tag(:password) %>
-      <%= submit_tag("Login", :class=>"button") %>
-    <% end %>
-  </div>
-  <div class="columns small-4">
-  </div>
+<div id="body">
+  <div class="row">
+    <div class="columns small-4">
+    </div>
+    <div class="columns small-4 small-centered">
+      <%= form_tag("/session", method: "post") do %>
+        <%= label_tag(:email) %>
+        <%= text_field_tag(:email) %>
+        <%= label_tag(:password) %>
+        <%= password_field_tag(:password) %>
+        <%= submit_tag("Login", :class=>"button") %>
+      <% end %>
+    </div>
+    <div class="columns small-4">
+    </div>
 
-</div>
-<div class="row">
-  <div class="columns small-4">
   </div>
-  <div class="columns small-4 small-centered">
-  <a href="/" class="button">Home</a>
-  </div>
-  <div class="columns small-4">
+  <div class="row">
+    <div class="columns small-4">
+    </div>
+    <div class="columns small-4 small-centered">
+    <a href="/" class="button">Home</a>
+    </div>
+    <div class="columns small-4">
+    </div>
   </div>
 </div>

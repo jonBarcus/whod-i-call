@@ -25,10 +25,16 @@ h1 {
   text-align: center;
 }
 
+#body {
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .button {
   width: 100%;
 }
 
-body {
+.row {
 
 }

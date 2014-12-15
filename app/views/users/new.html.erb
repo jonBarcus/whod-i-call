@@ -1,31 +1,33 @@
-<h1>Create Account</h1>
+<div id="body">
+  <h1>Create Account</h1>
 
-<div class="row">
-  <div class="columns small-3">
-  </div>
-  <div class="columns small-6 small-centered">
-    <%= form_for(@user) do |f| %>
-      <%= f.label(:email) %>
-      <%= f.text_field(:email) %>
-      <%= f.label(:name) %>
-      <%= f.text_field(:name) %>
-      <%= f.label(:password) %>
-      <%= f.password_field(:password) %>
-      <%= f.label(:password_confirmation) %>
-      <%= f.password_field(:password_confirmation) %>
-      <%= f.submit class: "button" %>
-    <% end %>
-  </div>
-  <div class="columns small-3">
-  </div>
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+      <%= form_for(@user) do |f| %>
+        <%= f.label(:email) %>
+        <%= f.text_field(:email) %>
+        <%= f.label(:name) %>
+        <%= f.text_field(:name) %>
+        <%= f.label(:password) %>
+        <%= f.password_field(:password) %>
+        <%= f.label(:password_confirmation) %>
+        <%= f.password_field(:password_confirmation) %>
+        <%= f.submit class: "button" %>
+      <% end %>
+    </div>
+    <div class="columns small-3">
+    </div>
 
-</div>
-<div class="row">
-  <div class="columns small-3">
   </div>
-  <div class="columns small-6 small-centered">
-  <a href="/" class="button">Home</a>
-  </div>
-  <div class="columns small-3">
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+    <a href="/" class="button">Home</a>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
 </div>

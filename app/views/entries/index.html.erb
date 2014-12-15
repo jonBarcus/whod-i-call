@@ -1,47 +1,49 @@
-<h1>Your Entries</h1>
+<div id="body">
+  <h1>Your Entries</h1>
 
-<div class="row">
-  <div class="columns small-3">
-  </div>
-  <div class="columns small-6 small-centered">
-    <ul class="no-bullet">
-    <% @entries.each do |entry| %>
-      <li>
-        <%= link_to(entry.contact_name, action: :show, id: entry.id) %>
-        at <%= entry.organization_name %>
-      </li>
-    <% end %>
-    </ul>
-  </div>
-  <div class="small-3">
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+      <ul class="no-bullet">
+      <% @entries.each do |entry| %>
+        <li>
+          <%= link_to(entry.contact_name, action: :show, id: entry.id) %>
+          at <%= entry.organization_name %>
+        </li>
+      <% end %>
+      </ul>
+    </div>
+    <div class="small-3">
+    </div>
+
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+    <a href="/entries/new" class="button">New Entry</a>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
 
-<div class="row">
-  <div class="columns small-3">
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+    <a href="/" class="button">Home</a>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
-  <div class="columns small-6 small-centered">
-  <a href="/entries/new" class="button">New Entry</a>
-  </div>
-  <div class="columns small-3">
-  </div>
-</div>
 
-<div class="row">
-  <div class="columns small-3">
-  </div>
-  <div class="columns small-6 small-centered">
-  <a href="/" class="button">Home</a>
-  </div>
-  <div class="columns small-3">
-  </div>
-</div>
-
-<div class="row">
-  <div class="columns small-3">
-  </div>
-  <div class="columns small-6 small-centered">
-  <a href="/logout" class="button">Log Out</a>
-  </div>
-  <div class="columns small-3">
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+    <a href="/logout" class="button">Log Out</a>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
 </div>

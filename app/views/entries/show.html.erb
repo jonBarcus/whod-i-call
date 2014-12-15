@@ -1,32 +1,34 @@
-<h1>This Entry</h1>
-<div class="row">
-  <div class="columns small-3">
+<div id="body">
+  <h1>This Entry</h1>
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+      Contact:  <%= @entry.contact_name %>
+      Organization:  <%= @entry.organization_name %>
+      Method:  <%= @com_type %>
+      Comments:  <%= @entry.notes %>
+      <%= link_to "Edit", edit_entry_path(@entry), class: "button" %>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
-  <div class="columns small-6 small-centered">
-    Contact:  <%= @entry.contact_name %>
-    Organization:  <%= @entry.organization_name %>
-    Method:  <%= @com_type %>
-    Comments:  <%= @entry.notes %>
-    <%= link_to "Edit", edit_entry_path(@entry), class: "button" %>
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+    <a href="/entries" class="button">Back</a>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
-  <div class="columns small-3">
-  </div>
-</div>
-<div class="row">
-  <div class="columns small-3">
-  </div>
-  <div class="columns small-6 small-centered">
-  <a href="/entries" class="button">Back</a>
-  </div>
-  <div class="columns small-3">
-  </div>
-</div>
-<div class="row">
-  <div class="columns small-3">
-  </div>
-  <div class="columns small-6 small-centered">
-  <a href="/" class="button">Home</a>
-  </div>
-  <div class="columns small-3">
+  <div class="row">
+    <div class="columns small-3">
+    </div>
+    <div class="columns small-6 small-centered">
+    <a href="/" class="button">Home</a>
+    </div>
+    <div class="columns small-3">
+    </div>
   </div>
 </div>
