@@ -4,10 +4,30 @@
     <div class="columns small-3">
     </div>
     <div class="columns small-6 small-centered">
-      Contact:  <%= @entry.contact_name %>
-      Organization:  <%= @entry.organization_name %>
-      Method:  <%= @com_type %>
-      Comments:  <%= @entry.notes %>
+      <table>
+        <tbody>
+          <tr>
+            <td>Contact:</td>
+            <td><%= @entry.contact_name %></td>
+          </tr>
+          <tr>
+            <td>Organization:</td>
+            <td><%= @entry.organization_name %></td>
+          </tr>
+          <tr>
+            <td>Method:</td>
+            <td><%= @com_type %></td>
+          </tr>
+          <tr>
+            <td>Comments:</td>
+            <td><%= @entry.notes %>
+          </tr>
+        </tbody>
+      </table>
+<!--       Contact:  <%#= @entry.contact_name %>
+      Organization:  <%#= @entry.organization_name %>
+      Method:  <%#= @com_type %>
+      Comments:  <%#= @entry.notes %> -->
       <%= link_to "Edit", edit_entry_path(@entry), class: "button" %>
     </div>
     <div class="columns small-3">
