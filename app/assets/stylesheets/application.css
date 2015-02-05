@@ -16,8 +16,23 @@
 
  */
 
+body {
+  background-color: #354458;
+
+}
+
+
 h1 {
+  color: white;
   text-align: center;
+}
+
+label {
+  color: white;
+}
+
+li {
+  color: white;
 }
 
 #main {
@@ -28,7 +43,7 @@ h1 {
 /*code for body tag:  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/*/
 
 #body {
-    position: relative;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
