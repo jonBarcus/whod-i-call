@@ -35,6 +35,10 @@ li {
   color: white;
 }
 
+table {
+  width: 100%;
+}
+
 #main {
   /*border: 1px solid black;*/
   text-align: center;
