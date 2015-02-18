@@ -34,11 +34,11 @@ gem 'foundation-rails'
 
 group :development, :test do
 
-  gem 'rspec'
-  gem 'rspec-rails'
+  gem 'rspec', '~> 3.2.0'
+  gem 'rspec-rails', '~> 3.2.0'
   gem 'pry-rails'
   gem 'annotate'
-  gem 'capybara'
+  gem 'capybara', '~> 2.4.4'
 
 end
 
