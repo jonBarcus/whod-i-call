@@ -1,6 +1,3 @@
-require 'spec_helper'
-
-
 describe "the sign-in process", :type => feature do
   before :each do
     User.create(:email => 'test@test.com', :password => 'testtest')
