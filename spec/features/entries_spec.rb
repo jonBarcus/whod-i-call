@@ -13,6 +13,16 @@ describe "Entry creation process", :type => feature do
   it "creates an entry" do
     click_link('New Entry')
     expect(page).to have_content 'Create a New Entry'
+    within("body") do
+      select('02,25,2015', :from => 'date')
+      fill_in 'Contact name', :with => 'Tester Testee'
+      fill_in 'Organization name', :with => 'Test Inc.'
+      fill_in 'Notes', :with => 'Wooo Capybara!'
+      select('Google Hangout', :from => 'entry_commuication_type_id')
+    end
+    click_button('Create Entry')
+    expect(page).to have_content 'New Entry'
+
   end
 
 end
