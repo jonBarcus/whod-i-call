@@ -17,7 +17,7 @@ describe "Entry creation process", :type => feature do
       fill_in 'Contact name', :with => 'Tester Testee'
       fill_in 'Organization name', :with => 'Test Inc.'
       fill_in 'Notes', :with => 'Wooo Capybara!'
-      select('Google Hangout', :from => 'entry_commuication_type_id')
+      select('Google Hangout', :from => 'entry_communication_type_id')
     end
     click_button('Create Entry')
     expect(page).to have_content 'New Entry'
