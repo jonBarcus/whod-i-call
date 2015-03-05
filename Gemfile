@@ -32,6 +32,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Foundation from Zurb for front end
 gem 'foundation-rails'
 
+# For Heroku
+gem 'rails_12factor'
+
 group :development, :test do
 
   gem 'rspec', '~> 3.2.0'
