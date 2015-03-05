@@ -21,6 +21,8 @@ describe "Entry creation process", :type => feature do
     end
     click_button('Create Entry')
     expect(page).to have_content 'New Entry'
+    click_link('View Entries')
+    expect(page).to have_content 'Tester Testee'
 
   end
 
